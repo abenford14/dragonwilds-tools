@@ -1,0 +1,10 @@
+0~# Local configuration
+config/config.sh
+
+# Runtime logs
+logs/
+
+# Editor / OS files
+*.swp
+*~
+.DS_Store
