@@ -3,16 +3,16 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$SCRIPT_DIR/../config/config.sh"
 
-echo "Starting $SERVICE_NAME..."
+echo "Stopping $SERVICE_NAME..."
 
-sudo systemctl start "$SERVICE_NAME"
+sudo systemctl stop "$SERVICE_NAME"
 
 sleep 2
 
 if systemctl is-active --quiet "$SERVICE_NAME"; then
-    echo "Server started successfully"
-    exit 0
-else
-    echo "Server failed to start"
+    echo "Server failed to stop"
     exit 1
+else
+    echo "Server stopped successfully"
+    exit 0
 fi

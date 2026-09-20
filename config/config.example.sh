@@ -5,6 +5,7 @@
 # Copy this file to config.sh and adjust the values for your installation.
 
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+STEAMCMD="/home/steam/.local/share/Steam/steamcmd/linux32/steamcmd"
 SERVICE_NAME="dragonwilds"
 STEAM_USER="steam"
 SERVER_DIR="/home/steam/dragonwilds"
