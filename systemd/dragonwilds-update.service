@@ -1,0 +1,8 @@
+[Unit]
+Description=Check and update RuneScape Dragonwilds server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/dragonwilds-tools/scripts/update.sh
